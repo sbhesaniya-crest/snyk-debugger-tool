@@ -1,0 +1,21 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+li {
+  margin: 5px 0;
+  cursor: pointer;
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+  align-items: right;
+}
+/* span {
+  display: inline-flex;
+  align-items: center;
+}
