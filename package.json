@@ -1,8 +1,10 @@
 {
   "name": "electron-vite-project",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A brief description of your app",
+  "author": "Sandip Bhesnaiya",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && electron-builder",
@@ -31,36 +33,19 @@
   },
   "main": "dist-electron/main.js",
   "build": {
-    "appId": "com.example.electronvite",
-    "productName": "ElectronViteApp",
+    "appId": "com.example.electron",
+    "mac": {
+      "target": ["dmg", "zip"],
+      "hardenedRuntime": true,
+      "category": "public.app-category.utilities"
+    },
     "files": [
-      "dist/**/*",
-      "dist-electron/**/*",
-      "node_modules/**/*",
+      "dist/",
+      "node_modules/",
       "package.json"
     ],
-    "directories": {
-      "output": "build"
-    },
-    "mac": {
-      "target": "dmg",
-      "hardenedRuntime": true,
-      "arch": [
-        "x64",
-        "arm64"
-      ]
-    },
-    "win": {
-      "target": [
-        "nsis",
-        "zip"
-      ]
-    },
-    "linux": {
-      "target": [
-        "AppImage",
-        "deb"
-      ]
-    }
+    "extraResources": [
+      "assets/"
+    ]
   }
 }
