@@ -1,1 +1,1 @@
-# snyk-debugger-
+# snyk-debugger
