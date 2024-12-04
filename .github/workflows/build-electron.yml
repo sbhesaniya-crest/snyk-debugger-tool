@@ -31,9 +31,6 @@ jobs:
       # Build and package the app
       - name: Build and package the Electron app
         run: npm run build
-        env:
-          CSC_LINK: ${{ secrets.CSC_LINK }}
-          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
 
       # Upload the build artifacts
       - name: Upload build artifacts
