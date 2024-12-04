@@ -129,7 +129,7 @@ const App = () => {
 
   const createNewSnyk = async (folderHandle: FileSystemDirectoryHandle) => {
     try {
-      const snykHandle = await folderHandle.getFileHandle(".snyk", {
+     await folderHandle.getFileHandle(".snyk", {
         create: true,
       });
       setPopupVisible(true); // Show popup for content input

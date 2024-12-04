@@ -2,7 +2,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-} */
+}
 
 li {
   margin: 5px 0;
@@ -14,8 +14,4 @@ pre {
   border: 1px solid #ddd;
   overflow-x: auto;
   align-items: right;
-}
-/* span {
-  display: inline-flex;
-  align-items: center;
 }
